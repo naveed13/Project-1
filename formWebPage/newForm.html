@@ -1,0 +1,122 @@
+<html>
+<head>
+  <title> Forms </title>
+  <link rel="stylesheet" href="styleform.css">
+  <body>
+
+    <header class="highlight">Form Details</header>
+
+    <form>
+
+      <section>
+        <fieldset>
+          <legend class="highlight"> Your Details </legend>
+
+          <label  class="highlight">
+            Name       :
+            <input type="text" name="name" size="30" maxlength="100">
+            <br />
+          </label>
+
+          <label  class="highlight">
+            Password       :
+            <input type="text" name="name" size="30" maxlength="100">
+            <br />
+          </label>
+
+
+
+          <label  class="highlight">
+            Email       :
+            <input type="text" name="name" size="30" maxlength="100">
+            <br />
+          </label>
+        </fieldset>
+      </section>
+
+
+      <section>
+        <fieldset>
+          <legend class="highlight">Gender</legend>
+          <input  type="radio" name="sex" value="male"> <p class="highlight"> Male</p>
+          <input type="radio" name="sex" value="female"> <p class="highlight">Female</p>
+        </fieldset>
+      </section>
+
+
+      <section>
+        <fieldset>
+          <legend class="highlight"> Transportation </legend>
+          <input class="highlight" type="checkbox" name="vehicle" value="Bike"> <p class="highlight"> bike</p>
+          <input type="checkbox" name="vehicle" value="Car"> <p class="highlight"> car </p>
+          <input type="checkbox" name="vehicle" value="Car"> <p class="highlight"> other <p>
+        </fieldset>
+      </section>
+
+
+      <section>
+        <fieldset>
+          <legend class="highlight"> List of Items </legend>
+          <ul>
+            <li> Item 1</li>
+            <li> Item 2 </li>
+            <li> Item 3 </li>
+          </ul>
+
+        </fieldset>
+      </section>
+
+<section>
+<fieldset>
+  <p class ="highlight">
+
+          <label for="hear-about">
+            How did you hear about us?
+          </label>
+
+          <select name="referer" id="hear-about">
+            <option  value="google">Google</option>
+            <option value="friend">Friend</option>
+            <option value="advert">Advert</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+</fieldset>
+</section>
+
+
+
+      <section>
+        <fieldset>
+          <legend class="highlight"> Submission </legend>
+          <input type="submit" value="Submit" class="highlight">
+        </fieldset>
+      </section>
+
+
+
+
+
+
+
+
+    </form>
+
+    <script>
+
+      var high = document.querySelectorAll(".highlight");
+      for (var i =0; i < high.length;i++) {
+        high[i].className= "highlight_text";
+      }
+
+      var list = document.getElementsByTagName("li");
+      for (var i =0; i < list.length;i++) {
+        list[i].className="highlight_text";
+      }
+
+
+    </script>
+
+  </body>
+</head>
