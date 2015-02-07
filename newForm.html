@@ -96,7 +96,7 @@
     <section>
       <fieldset>
         <legend> Submission </legend>
-        <input type="submit" value="Submit" class="highlight">
+        <input class="highlight" type="submit" value="Submit">
       </fieldset>
     </section>
 
@@ -115,11 +115,10 @@
     change_tag("legend", "highlight_text");
 
 
-    function change_class(className, apply_new_class) {
-      console.log(className);
-      var class_change= document.getElementsByClassName(className);
-      for (var i =0; i < class_change.length;i++) {
-        class_change[i].className= apply_new_class;
+    function change_class(old_className, apply_new_class) {
+      var class_ch= document.getElementsByClassName(className);
+      for (var i =0; i < class_ch.length;i++) {
+        class_ch[i].className= apply_new_class;
       }
     }
 
