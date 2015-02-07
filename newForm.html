@@ -10,7 +10,7 @@
 
 <body>
 
-  <header class="highlight">Form Details</header>
+  <header>Form Details</header>
 
   <form>
 
@@ -20,13 +20,13 @@
 
         <label>
           Name:
-          <input  id='username' type="text" name="name">
+          <input type="text" name="name">
           <br />
         </label>
 
         <label>
           Password:
-          <input type="text" name="password">
+          <input id='username' type="text" name="password">
           <br />
         </label>
 
@@ -113,6 +113,8 @@
     change_tag("li", "highlight_text");
     change_tag("label", "highlight_text");
     change_tag("legend", "highlight_text");
+    change_tag("header", "highlight_text");
+
 
 
     function change_class(old_className, apply_new_class) {
