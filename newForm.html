@@ -1,0 +1,142 @@
+<html>
+<head>
+  <title> Forms </title>
+  <link rel="stylesheet" href="styleform.css">
+
+
+
+</head>
+
+
+<body>
+
+  <header class="highlight">Form Details</header>
+
+  <form>
+
+    <section>
+      <fieldset>
+        <legend> Your Details </legend>
+
+        <label>
+          Name:
+          <input  id='username' type="text" name="name">
+          <br />
+        </label>
+
+        <label>
+          Password:
+          <input type="text" name="password">
+          <br />
+        </label>
+
+
+
+        <label>
+          Email:
+          <input type="text" name="email">
+          <br />
+        </label>
+      </fieldset>
+    </section>
+
+
+    <section>
+      <fieldset>
+        <legend>Gender</legend>
+        <input  type="radio" name="sex" value="male">  Male
+        <input type="radio" name="sex" value="female"> Female
+      </fieldset>
+    </section>
+
+
+    <section>
+      <fieldset>
+        <legend> Transportation </legend>
+        <input class="highlight" type="checkbox" name="vehicle" value="Bike"> bike
+        <input type="checkbox" name="vehicle" value="Car">  car
+        <input type="checkbox" name="vehicle" value="Car"> other
+      </fieldset>
+    </section>
+
+
+    <section>
+      <fieldset>
+        <legend> List of Items </legend>
+        <ul>
+          <li> Item 1</li>
+          <li> Item 2 </li>
+          <li> Item 3 </li>
+        </ul>
+
+      </fieldset>
+    </section>
+
+    <section>
+      <fieldset>
+        <p class ="highlight">
+
+          <label for="hear-about">
+            How did you hear about us?
+          </label>
+
+          <select name="referer" id="hear-about">
+            <option  value="google">Google</option>
+            <option value="friend">Friend</option>
+            <option value="advert">Advert</option>
+            <option value="other">Other</option>
+          </select>
+        </p>
+
+      </fieldset>
+    </section>
+
+
+
+    <section>
+      <fieldset>
+        <legend> Submission </legend>
+        <input type="submit" value="Submit" class="highlight">
+      </fieldset>
+    </section>
+
+  </form>
+
+  <script>
+
+    function change_tag(tag) {
+      var tag_change= document.getElementsByTagName(tag);
+      for (var i =0; i < tag_change.length;i++) {
+        tag_change[i].className= "highlight_text";
+      }
+    }
+    change_tag("li");
+    change_tag("label");
+    change_tag("legend");
+
+
+    function change_class(className) {
+      console.log(className);
+      var class_change= document.getElementsByClassName(className);
+      for (var i =0; i < class_change.length;i++) {
+        class_change[i].className= "highlight_text";
+      }
+    }
+
+    change_class("highlight")
+
+
+
+    function setup() {
+      var textInput=document.getElementById('username');
+      console.log(textInput);
+      textInput.focus;
+    }
+    window.addEventListener('load', setup, false);
+
+
+  </script>
+
+</body>
+</html>
+
