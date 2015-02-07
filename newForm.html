@@ -104,26 +104,26 @@
 
   <script>
 
-    function change_tag(tag) {
+    function change_tag(tag, apply_class) {
       var tag_change= document.getElementsByTagName(tag);
       for (var i =0; i < tag_change.length;i++) {
-        tag_change[i].className= "highlight_text";
+        tag_change[i].className= apply_class;
       }
     }
-    change_tag("li");
-    change_tag("label");
-    change_tag("legend");
+    change_tag("li", "highlight_text");
+    change_tag("label", "highlight_text");
+    change_tag("legend", "highlight_text");
 
 
-    function change_class(className) {
+    function change_class(className, apply_new_class) {
       console.log(className);
       var class_change= document.getElementsByClassName(className);
       for (var i =0; i < class_change.length;i++) {
-        class_change[i].className= "highlight_text";
+        class_change[i].className= apply_new_class;
       }
     }
 
-    change_class("highlight");
+    change_class("highlight", "highlight_text");
 
 
 
