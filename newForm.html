@@ -53,7 +53,7 @@
     <section>
       <fieldset>
         <legend> Transportation </legend>
-        <input class="highlight" type="checkbox" name="vehicle" value="Bike"> bike
+        <input  type="checkbox" name="vehicle" value="Bike"> bike
         <input type="checkbox" name="vehicle" value="Car">  car
         <input type="checkbox" name="vehicle" value="Car"> other
       </fieldset>
@@ -123,14 +123,14 @@
       }
     }
 
-    change_class("highlight")
+    change_class("highlight");
 
 
 
     function setup() {
       var textInput=document.getElementById('username');
       console.log(textInput);
-      textInput.focus;
+      textInput.focus();
     }
     window.addEventListener('load', setup, false);
 
